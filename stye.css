@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#FailedLoadText{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 650;
+    font-size: 10vh;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+    line-height: 100vh;
+    z-index: 0;
+}
