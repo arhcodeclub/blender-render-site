@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
-        <div id = "TopBar"></div>
-        <video class="content" loop muted autoplay>
-            <source src="./submissions/video.mp4" type="video/mp4">
-        </video>
-        <img class="content" src="./submissions/image.png">
-        <p id="FailedLoadText">Failed to load Render...</p>
+        <div id = "topbar">
+            <p id="theme">The Konami Code</p>
+            <p id="date">25-12-1961</p>
+        </div>
+        <div id = "content-container">
+            <video class="content" loop muted autoplay>
+                <source src="./submissions/video.mp4" type="video/mp4">
+            </video>
+            <img class="content" src="./submissions/image.png">
+            <p id="failed-load-text">Failed to load Render...</p>
+            <p id="artist">By John Snow</p>
+        </div>
+
     </body>
 </html>

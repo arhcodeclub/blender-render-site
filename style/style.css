@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/*THEME VARS:*/
+:root {
+    --bar-size: 12.5vh;
+    --bar-border-radius: 20vh;
+    --relative-theme-font-size: 0.85;
+    --relative-date-font-size: 0.15;
+
+    --artist-font-size: 2vh;
+}
+
+/*CSS CODE*/
+
+body {
+    margin: 0;
+    width:100vw;
+    background-color: rgb(5, 5, 20);
+}
+
+video{
+    object-fit: cover;
+    z-index: 2;
+}
+
+img{
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.content{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+#topbar{
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: var(--bar-border-radius);
+    border-bottom-right-radius: var(--bar-border-radius);
+    box-shadow: 0px 0px 20px 25px rgba(0,0,0,0.5);
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: calc(var(--bar-size)*1.25);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+#topbar #theme{
+    white-space: nowrap;
+    text-align: center;
+    line-height: 140%;
+    margin:0;
+    font-size: calc(var(--bar-size) * var(--relative-theme-font-size));
+}
+
+#topbar #date{
+    text-align: center;
+    line-height: 0%;
+    margin:0;
+    font-size: calc(var(--bar-size) * var(--relative-date-font-size));
+}
+
+#artist{
+    position: fixed;
+    text-align: left;
+    margin: 0.7%;
+    bottom: 0;
+    right:0;
+    z-index: 10;
+
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--artist-font-size);
+
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.5);
+
+}
+
+
+#failed-load-text{
+    color: rgb(231, 66, 66);
+    font-family: 'Comfortaa', cursive;
+    font-weight: 650;
+    font-size: 10vh;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+    line-height: 100vh;
+    z-index: 0;
+}
