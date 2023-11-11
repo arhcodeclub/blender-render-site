@@ -2,9 +2,9 @@
 
 /*THEME VARS:*/
 :root {
-    --bar-size: 11vh;
-    --bar-border-radius: 20vw;
-    --relative-theme-font-size: 0.4;
+    --bar-size: 12.5vh;
+    --bar-border-radius: 20vh;
+    --relative-theme-font-size: 0.85;
     --relative-date-font-size: 0.15;
 
     --artist-font-size: 2vh;
@@ -38,47 +38,52 @@ img{
 #topbar{
     background: rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: var(--bar-border-radius);
-    border-top-left-radius: var(--bar-border-radius);
+    border-bottom-right-radius: var(--bar-border-radius);
     box-shadow: 0px 0px 20px 25px rgba(0,0,0,0.5);
 
-    max-width: 35vw;
-    max-height: 35vh;
-
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: calc(var(--bar-size)*1.25);
     z-index: 10;
     position: fixed;
-    top: 55vh;
-    right:0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     color: white;
     font-family: 'Comfortaa', cursive;
-    
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 #topbar #theme{
+    white-space: nowrap;
     text-align: center;
-    line-height: 130%;
-    max-height: 32vh;
+    line-height: 140%;
     margin:0;
-    font-size: calc(var(--bar-size)*0.75);
+    font-size: calc(var(--bar-size) * var(--relative-theme-font-size));
 }
 
 #topbar #date{
-    text-align: right;
-    line-height: 130%;
+    text-align: center;
+    line-height: 0%;
     margin:0;
     font-size: calc(var(--bar-size) * var(--relative-date-font-size));
 }
 
 #artist{
-    text-align: right;
-    line-height: 130%;
-    margin:0;
-    font-size: calc(var(--bar-size) * var(--relative-date-font-size));
-    font-weight: 600;
+    position: fixed;
+    text-align: left;
+    margin: 0.7%;
+    bottom: 0;
+    right:0;
+    z-index: 10;
+
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--artist-font-size);
+
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.5);
+
 }
 
 
