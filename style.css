@@ -2,30 +2,27 @@
 
 body {
     margin: 0;
+    padding:0;
+    width:100vw;
 }
 
 video{
-    width: 100vw;
-    height: 100vh;
     object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     z-index: 2;
 }
 
 img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    object-fit: fill;
     z-index: 1;
+}
+
+.content{
+    aspect-ratio: 16/9;
+    height: 85vh;
+    position: fixed;
+    top: 15vh;
+    padding-left: auto;
+    padding-left: auto;
 }
 
 #FailedLoadText{
@@ -37,4 +34,12 @@ img{
     height: 100vh;
     line-height: 100vh;
     z-index: 0;
+}
+
+#TopBar{
+    background-color: purple;
+    width: 100vw;
+    height: 15vh;
+    z-index: 10;
+    position: absolute;
 }
