@@ -4,10 +4,8 @@
 :root {
     --bar-size: 11vh;
     --bar-border-radius: 20vw;
-    --relative-theme-font-size: 0.4;
-    --relative-date-font-size: 0.15;
-
-    --artist-font-size: 2vh;
+    --relative-theme-font-size: 0.45;
+    --relative-date-font-size: 0.2;
 }
 
 /*CSS CODE*/
