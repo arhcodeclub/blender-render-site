@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 25vh;
+}
+
+@keyframes animate-left-to-right{
+    0%  {left: 0vw;   opacity: 0;}
+    100%  {left: 25vw; opacity: 1;}
+}
+@keyframes animate-right-to-left{
+    0%  {right: 0;   opacity: 0;}
+    100%  {right: 25vw; opacity: 1;}
+}
+
+#blender{
+    width: 200vw;
+
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+    animation-name: animate-left-to-right;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#render{
+    width: 200vw;
+    text-align: right;
+
+    position: absolute;
+    top: 25vh;
+    opacity: 0;
+
+    animation-name: animate-right-to-left;
+    animation-duration: 1.25s;
+    animation-delay: 0.25s ;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes countdown{
+    0%      {transform: scale(1);}
+    5%      {transform: scale(1.2);}
+    20%      {transform: scale(1);}
+    25%      {transform: scale(1.2);}
+    40%      {transform: scale(1);}
+    45%      {transform: scale(1.2);}
+    60%      {transform: scale(1);}
+    65%      {transform: scale(1.2);}
+    80%      {transform: scale(1);}
+    85%      {transform: scale(1.2);}
+}
+
+#counter::before{
+    animation-name: countdown;
+    animation-duration: 5s;
+}
+
+#counter{
+    font-size: 20vh;
+    width:10vw;
+    margin:auto;
+    margin-top: 5vh;
+    bottom: 10vh;
+    text-align: center;
+    animation-name: countdown;
+    animation-duration: 5s;
+}
+
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#text{
+    font-size: 10vh;
+    margin:auto;
+    margin-top: 50vh;
+    bottom: 10vh;
+    text-align: center;
+    opacity: 0;
+
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
