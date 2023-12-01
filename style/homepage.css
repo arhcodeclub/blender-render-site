@@ -83,7 +83,6 @@ body{
     z-index: -1;
     height: 37.5vh;
     
-    border-top: 0.5vh solid white;
     background-image: linear-gradient(-45deg, #49d0f5, #4598e6);
 }
 
@@ -264,3 +263,40 @@ body{
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
+
+/* LOADBAR */
+.loadbar{
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    top: 62.5vh;
+    left:0;
+    z-index: 10;
+
+    background-color: black;
+}
+
+@keyframes loadbar-anim {
+    0%{width:10vw;}
+    100%{width: 110vw;}
+}
+
+.loadbar div{
+    position: relative;
+    left:-10vw;
+    width:50vw;
+    margin-top: .5vh;
+    height:4vh;
+    z-index: 11;
+
+    border-radius: 5vh;
+
+    background-color: white;
+
+    animation-name: loadbar-anim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
