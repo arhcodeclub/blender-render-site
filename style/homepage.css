@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&family=Smooch+Sans:wght@600&display=swap');
+
 body{
     margin:0;
     padding: 0;
@@ -6,20 +8,21 @@ body{
 
 .title{
     font-size: 25vh;
+
+    font-family: 'Play', sans-serif;
 }
 
 @keyframes animate-left-to-right{
     0%  {left: 0vw;   opacity: 0;}
     100%  {left: 25vw; opacity: 1;}
 }
+
 @keyframes animate-right-to-left{
     0%  {right: 0;   opacity: 0;}
     100%  {right: 25vw; opacity: 1;}
 }
 
 #blender{
-    width: 200vw;
-
     position: absolute;
     top: 0;
     opacity: 0;
@@ -31,9 +34,6 @@ body{
 }
 
 #render{
-    width: 200vw;
-    text-align: right;
-
     position: absolute;
     top: 25vh;
     opacity: 0;
@@ -44,6 +44,43 @@ body{
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
+
+#background1{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index: -1;
+    height: 27.5vh;
+    
+
+    background-color: green;
+}
+
+#background2{
+    position: absolute;
+    top: 27.5vh;
+    left:0;
+    right: 0;
+    z-index: -1;
+    height: 35vh;
+    
+
+    background-color: darkgreen;
+}
+
+#background3{
+    position: absolute;
+    top: 62.5vh;
+    left:0;
+    right: 0;
+    z-index: -1;
+    height: 37.5vh;
+    
+
+    background-color: #49d0f5;
+}
+
 
 @keyframes countdown{
     0%      {transform: scale(1);}
@@ -72,6 +109,8 @@ body{
     text-align: center;
     animation-name: countdown;
     animation-duration: 5s;
+
+    font-family: 'Play', sans-serif;
 }
 
 @keyframes fade-in{
@@ -86,9 +125,24 @@ body{
     bottom: 10vh;
     text-align: center;
     opacity: 0;
+    
+    font-family: 'Play', sans-serif;
 
     animation-name: fade-in;
     animation-duration: 1.5s;
     animation-delay: 0.75s;
     animation-fill-mode: forwards;
+}
+
+#logo{
+    position: absolute;
+    height: 7.5vh;
+    right:2.5vw;
+    bottom:2.5vh;
+    padding: 2.5vh;
+
+    border-radius: 2vh;
+
+    border: 2px dotted #41ABDC;
+    background-color: #49def5;
 }
