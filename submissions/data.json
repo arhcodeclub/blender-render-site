@@ -1,0 +1,20 @@
+{
+    "submissions":[
+        {
+            "Theme": "Sinterklaas",
+            "Author": "Jack Tollenaar",
+            "Date": "17-11-2023",
+            "url": "submissions/jack_sinterklaas.mp4",
+            "type": "video"
+            
+        },
+        
+        {
+            "Theme": "Magie",
+            "Author": "Boris Kooiman",
+            "Date": "29/09/2023",
+            "url": "submissions/boris_magie.mov",
+            "type": "video"
+        }
+    ]
+}
