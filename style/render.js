@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("./data.json")
+    const urlParams = new URLSearchParams(window.location.search);
+
+    fetch("./submissions/data.json")
         .then(response => response.json())
         .then(data => {
             const submissions = data.submissions;
@@ -8,14 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 const topbarArtist = document.getElementById("artist");
                 const topbarDate = document.getElementById("date");
                 const submissionIndex = urlParams.get('index');
-                const urlParams = new URLSearchParams(window.location.search);
-
 
                 topbarTheme.textContent = submissions[submissionIndex].Theme;
                 topbarArtist.textContent = "Door " + submissions[submissionIndex].Author;
                 topbarDate.textContent = submissions[submissionIndex].Date;
 
                 submission = submissions[submissionIndex];
+
 
                 if (submission.type == "video") {
                     const video = document.getElementById("videosrc");
@@ -37,13 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Update the content attribute with the new URL including the parameter
                 const metaTag = document.getElementById("linker");
-                const i = 0;
-                if(submissionIndex+1 < submissionIndex.length){
-                    i = submissionIndex+1;
+                let i;
+                if(parseInt(submissionIndex)+1 < submissions.length){
+                    i = 1 + parseInt(submissionIndex);
                 }else{
                     i = 0;
                 }
-                metaTag.setAttribute("content", "5;url=./render_looping.html?index=" + encodeURIComponent(submissionIndex+1));             
+                metaTag.setAttribute("content",  submission.duration + ";url=./index_looping.html?index=" + i);             
             }
         })
         .catch(error => console.error("Error fetching data:", error));
