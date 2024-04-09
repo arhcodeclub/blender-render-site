@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const topbarArtist = document.getElementById("artist");
                 const topbarDate = document.getElementById("date");
                 const submissionIndex = urlParams.get('index');
+                if(submissionIndex == null){
+                    submissionIndex = 0;
+                }
 
                 topbarTheme.textContent = submissions[submissionIndex].Theme;
                 topbarArtist.textContent = "Door " + submissions[submissionIndex].Author;
