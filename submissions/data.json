@@ -1,123 +1,124 @@
 {
-    "submissions":[
-        {
-            "Theme": "Magie",
-            "Author": "Jack Tollenaar",
-            "Date": "29-09-2023",
-            "url": "submissions/jack_magie.mp4",
-            "type": "video",
-            "duration": 10
-        },
-        
-        {
-            "Theme": "Magie",
-            "Author": "Boris Kooiman",
-            "Date": "29/09/2023",
-            "url": "submissions/boris_magie.mov",
-            "type": "video",
-            "duration": 10
-
-        },
-
-        {
-            "Theme": "Magie",
-            "Author": "Pieter te Loeke",
-            "Date": "29/09/2023",
-            "url": "submissions/magie_dieguy.png",
-            "type": "img",
-            "duration": 8
-        },
-
-        {
-            "Theme": "Volkoren",
-            "Author": "Boris Kooiman",
-            "Date": "05/10/2023",
-            "url": "submissions/volkoren_boris.png",
-            "type": "img",
-            "duration": 8
-
-        },
-
-        {
-            "Theme": "Volkoren",
-            "Author": "Pieter te Loeke",
-            "Date": "04/10/2023",
-            "url": "submissions/volkoren_pieter.png",
-            "type": "img",
-            "duration": 8
-
-        },
-
-        {
-            "Theme": "Volkoren",
-            "Author": "Jack Tollenaar",
-            "Date": "06/10/2023",
-            "url": "submissions/volkoren_jack.mp4",
-            "type": "video",
-            "duration": 27
-        },
-
-        {
-            "Theme": "Sinterklaas",
-            "Author": "Jack Tollenaar",
-            "Date": "17-11-2023",
-            "url": "submissions/jack_sinterklaas.mp4",
-            "type": "video",
-            "duration": 10
-        },
-
-        {
-            "Theme": "Paarse Vrijdag",
-            "Author": "Boris Kooiman",
-            "Date": "08/12/2023",
-            "url": "submissions/paarsevrijdag_boris.mov",
-            "type": "video",
-            "duration": 10
-        },
-
-        {
-            "Theme": "Paarse Vrijdag",
-            "Author": "Jack Tollenaar",
-            "Date": "08/12/2023",
-            "url": "submissions/paars_jack.mp4",
-            "type": "video",
-            "duration": 9
-        },
-
-        {
-            "Theme": "Caustic",
-            "Author": "Jack Tollenaar",
-            "Date": "26/01/2024",
-            "url": "submissions/caustic_jack.mp4",
-            "type": "video",
-            "duration": 8
-        },
-
-        {
-            "Theme": "Caustic",
-            "Author": "Jan Berentsen",
-            "Date": "26/01/2024",
-            "url": "submissions/caustic_jan.png",
-            "type": "img",
-            "duration": 8
-        },
-
-        {
-            "Theme": "Unprompted",
-            "Author": "Jack Tollenaar",
-            "Date": "03/02/2024",
-            "url": "submissions/jack_surprise.png",
-            "type": "img",
-            "duration": 8
-        },
-
-        {
-            "Theme": "Helal",
-            "Author": "Boris Kooiman",
-            "Date": "16/02/2024",
-            "url": "submissions/helal_boris.mp4",
-            "type": "video",
-            "duration": 20
-        }
-    ]
+  "submissions": [
+    {
+      "Theme": "Magie",
+      "Author": "Jack Tollenaar",
+      "Date": "29-09-2023",
+      "url": "submissions/jack_magie.mp4",
+      "type": "video",
+      "duration": 10
+    },
+    {
+      "Theme": "Magie",
+      "Author": "Boris Kooiman",
+      "Date": "29/09/2023",
+      "url": "submissions/boris_magie.mov",
+      "type": "video",
+      "duration": 10
+    },
+    {
+      "Theme": "Magie",
+      "Author": "Pieter te Loeke",
+      "Date": "29/09/2023",
+      "url": "submissions/magie_dieguy.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Volkoren",
+      "Author": "Boris Kooiman",
+      "Date": "05/10/2023",
+      "url": "submissions/volkoren_boris.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Volkoren",
+      "Author": "Pieter te Loeke",
+      "Date": "04/10/2023",
+      "url": "submissions/volkoren_pieter.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Volkoren",
+      "Author": "Jack Tollenaar",
+      "Date": "06/10/2023",
+      "url": "submissions/volkoren_jack.mp4",
+      "type": "video",
+      "duration": 27
+    },
+    {
+      "Theme": "Sinterklaas",
+      "Author": "Jack Tollenaar",
+      "Date": "17-11-2023",
+      "url": "submissions/jack_sinterklaas.mp4",
+      "type": "video",
+      "duration": 10
+    },
+    {
+      "Theme": "Paarse Vrijdag",
+      "Author": "Boris Kooiman",
+      "Date": "08/12/2023",
+      "url": "submissions/paarsevrijdag_boris.mov",
+      "type": "video",
+      "duration": 10
+    },
+    {
+      "Theme": "Paarse Vrijdag",
+      "Author": "Jack Tollenaar",
+      "Date": "08/12/2023",
+      "url": "submissions/paars_jack.mp4",
+      "type": "video",
+      "duration": 9
+    },
+    {
+      "Theme": "Caustic",
+      "Author": "Jack Tollenaar",
+      "Date": "26/01/2024",
+      "url": "submissions/caustic_jack.mp4",
+      "type": "video",
+      "duration": 8
+    },
+    {
+      "Theme": "Caustic",
+      "Author": "Jan Berentsen",
+      "Date": "26/01/2024",
+      "url": "submissions/caustic_jan.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Unprompted",
+      "Author": "Jack Tollenaar",
+      "Date": "03/02/2024",
+      "url": "submissions/jack_surprise.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Helal",
+      "Author": "Boris Kooiman",
+      "Date": "16/02/2024",
+      "url": "submissions/helal_boris.mp4",
+      "type": "video",
+      "duration": 20
+    },
+    {
+      "Theme": "Code Club wint Game Jam in Metis, Amsterdam",
+      "Author": "Code Club",
+      "Date": "20/07/2023",
+      "url": "submissions/20230720 codeclub wint gamejame.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Code Club - Het Kloppende Hart",
+      "Author": "Leerlingen Informatica en Art&Desig en Code Club",
+      "Date": "20/07/2023",
+      "url": "submissions/20240520 codeclub - het kloppende hart.mp4",
+      "type": "video",
+      "duration": 5
+    }
+  ]
 }
