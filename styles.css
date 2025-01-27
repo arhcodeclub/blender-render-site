@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+}
+
+#kiosk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white; /* Set background to white */
+    color: black; /* Set default text color to black for contrast */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures header is above all content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+}
+
+#kiosk-header img {
+    max-height: 80px;
+    object-fit: contain;
+}
+
+#kiosk-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px;
+    color: black; /* Match text color to header background */
+}
+
+#kiosk-title .nerdy-font {
+    font-family: 'Courier New', Courier, monospace; /* Nerdy font style */
+    color: #ffcc00; /* Bright yellow color for emphasis */
+}
+
+#kiosk-title .codeclub-font {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fun font style */
+    color: #00aaff; /* A brighter blue for Codeclub */
+}
+
+#kiosk-container {
+    margin-top: 120px; /* Push content below the fixed header */
+    text-align: center;
+    padding: 20px;
+}
+
+#media-container {
+    max-width: 800px;
+    max-height: 600px;
+    margin: auto;
+}
+
+#image-display, #video-display {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+#metadata {
+    margin-top: 20px;
+}
+
