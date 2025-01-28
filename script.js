@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const authorDisplay = document.getElementById('author');
     const dateDisplay = document.getElementById('date');
 
-    // Fetch the data from submissions/data.json
     async function fetchSubmissions() {
         try {
             const response = await fetch('submissions/data.json');
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            submissions = data.submissions || []; // Ensure submissions array exists
+            submissions = data.submissions || [];
 
             if (submissions.length > 0) {
                 showMedia(currentIndex);
@@ -33,19 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.startKiosk = function startKiosk() {
-        startButton.style.display = 'none';
-        mediaContainer.style.display = 'block';
-        metadataContainer.style.display = 'block';
+        startButton.style.opacity = '0';
+        setTimeout(() => {
+            startButton.style.display = 'none';
+            mediaContainer.style.display = 'block';
+            metadataContainer.style.display = 'block';
+            
+            // Trigger reflow
+            void mediaContainer.offsetWidth;
+            
+            mediaContainer.classList.add('visible');
+            metadataContainer.classList.add('visible');
 
-        if (submissions.length > 0) {
-            showMedia(currentIndex);
-        } else {
-            console.error('No submissions available.');
-        }
+            if (submissions.length > 0) {
+                showMedia(currentIndex);
+            } else {
+                console.error('No submissions available.');
+            }
+        }, 300);
     };
 
     function showMedia(index) {
-        // Clear previous timeout to avoid overlap
         clearTimeout(fallbackTimeout);
 
         const media = submissions[index];
@@ -54,42 +61,63 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Update metadata
-        themeDisplay.textContent = `Theme: ${media.Theme}`;
-        authorDisplay.textContent = `Author: ${media.Author}`;
-        dateDisplay.textContent = `Date: ${media.Date}`;
+        // Update metadata with fade effect
+        metadataContainer.classList.remove('visible');
+        setTimeout(() => {
+            themeDisplay.textContent = `${media.Theme}`;
+            authorDisplay.textContent = `Door: ${media.Author}`;
+            dateDisplay.textContent = `Datum: ${media.Date}`;
+            metadataContainer.classList.add('visible');
+        }, 300);
 
         if (media.type === 'img') {
-            // Show image
-            videoDisplay.style.display = 'none';
-            videoDisplay.pause();
-            imageDisplay.src = media.url;
-            imageDisplay.style.display = 'block';
+            videoDisplay.classList.remove('visible');
+            setTimeout(() => {
+                videoDisplay.style.display = 'none';
+                videoDisplay.pause();
+                imageDisplay.src = media.url;
+                imageDisplay.style.display = 'block';
+                
+                // Trigger reflow
+                void imageDisplay.offsetWidth;
+                
+                imageDisplay.classList.add('visible');
+            }, 300);
 
-            // Set fallback timer for next media
             fallbackTimeout = setTimeout(nextMedia, media.duration * 1000);
         } else if (media.type === 'video') {
-            // Show video
-            imageDisplay.style.display = 'none';
-            imageDisplay.src = '';
-            videoDisplay.src = media.url;
-            videoDisplay.style.display = 'block';
+            imageDisplay.classList.remove('visible');
+            setTimeout(() => {
+                imageDisplay.style.display = 'none';
+                imageDisplay.src = '';
+                videoDisplay.src = media.url;
+                videoDisplay.style.display = 'block';
+                
+                // Trigger reflow
+                void videoDisplay.offsetWidth;
+                
+                videoDisplay.classList.add('visible');
+                videoDisplay.play();
+            }, 300);
 
-            // Play video
-            videoDisplay.play();
-
-            // Use `onended` and a fallback timer to ensure it respects JSON duration
             videoDisplay.onended = () => {
-                videoDisplay.pause();
-                videoDisplay.currentTime = 0;
-                videoDisplay.style.display = 'none'; // Ensure video is hidden
-                nextMedia();
+                videoDisplay.classList.remove('visible');
+                setTimeout(() => {
+                    videoDisplay.pause();
+                    videoDisplay.currentTime = 0;
+                    videoDisplay.style.display = 'none';
+                    nextMedia();
+                }, 300);
             };
+
             fallbackTimeout = setTimeout(() => {
-                videoDisplay.pause();
-                videoDisplay.currentTime = 0; // Reset video to start
-                videoDisplay.style.display = 'none'; // Ensure video is hidden
-                nextMedia();
+                videoDisplay.classList.remove('visible');
+                setTimeout(() => {
+                    videoDisplay.pause();
+                    videoDisplay.currentTime = 0;
+                    videoDisplay.style.display = 'none';
+                    nextMedia();
+                }, 300);
             }, media.duration * 1000);
         }
     }
@@ -97,16 +125,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function nextMedia() {
         const previousMedia = submissions[currentIndex];
         if (previousMedia && previousMedia.type === 'img') {
-            imageDisplay.style.display = 'none'; // Ensure the previous image is hidden
+            imageDisplay.classList.remove('visible');
+            setTimeout(() => {
+                imageDisplay.style.display = 'none';
+            }, 300);
         }
 
         currentIndex = (currentIndex + 1) % submissions.length;
         showMedia(currentIndex);
     }
 
-    // Add click event listener to the start button
     startButton.addEventListener('click', startKiosk);
-
-    // Fetch submissions on page load
     fetchSubmissions();
 });
