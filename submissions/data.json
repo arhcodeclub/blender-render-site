@@ -111,6 +111,94 @@
       "url": "submissions/20240520 codeclub - het kloppende hart.mp4",
       "type": "video",
       "duration": 5
+    },
+    {
+      "Theme": "Advent kalender voor de Codeclub",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/advent_auth.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Advent kalender voor de Codeclub",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/advent_flow.gif",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "aAdvent kalender voor de Codeclub",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/advent_home.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Website voor het vak BHP",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/big_history.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Een cli tool",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/cli.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Beheer en opzetten van een Github account voor Codeclub",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/github.png",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Een slim horloge voor Telefoons thuis of in de kluis",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/horloge.JPG",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Kahoot!, Dat kan toch automatisch",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/kahoot.mov",
+      "type": "video",
+      "duration": 8
+    },
+    {
+      "Theme": "matrix",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/matrix.gif",
+      "type": "img",
+      "duration": 8
+    },
+    {
+      "Theme": "Met positie informatie van Nasa een eigen universie in Unity",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/planeten.mov",
+      "type": "video",
+      "duration": 8
+    },
+    {
+      "Theme": "Raspberry Pi als cluster en meer",
+      "Author": "Teije",
+      "Date": "2024",
+      "url": "submissions/raspberry_pi.mov",
+      "type": "video",
+      "duration": 8
     }
   ]
 }
