@@ -199,6 +199,14 @@
       "url": "submissions/raspberry_pi.mov",
       "type": "video",
       "duration": 8
+    },
+    {
+      "Theme": "3D printer: Trump een munt? Codeclub een munt!",
+      "Author": "Jort",
+      "Date": "2025",
+      "url": "submissions/20250125 Jort en 3d printer.jpg",
+      "type": "img",
+      "duration": 8
     }
   ]
 }
