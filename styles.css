@@ -50,22 +50,24 @@ body {
     color: black;
 }
 
+
+
 #kiosk-title .nerdy-font {
     font-family: 'Courier New', Courier, monospace;
-    color: #00FF9D;
-    font-size:larger;
+    color: #FF6B6B;
+    font-size:1.5em;
 }
 
 #kiosk-title .codeclub-font {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     color: #00aaff;
-    font-size:larger;
+    font-size:1.5em;
 }
 
 #kiosk-title .robotica-font {
-    color: #FF6B6B;
+    color: #00FF9D;
     font-family: 'Orbitron', sans-serif;
-    font-size:larger;
+    font-size:1.5em;
 }
 
 #kiosk-container {
