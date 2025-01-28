@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 /* Global transition defaults */
 * {
     transition: all 0.3s ease-in-out;
@@ -37,12 +38,8 @@ body {
 #kiosk-header img {
     max-height: 80px;
     object-fit: contain;
-    transition: transform 0.3s ease;
 }
 
-#kiosk-header img:hover {
-    transform: scale(1.05);
-}
 
 #kiosk-title {
     flex-grow: 1;
@@ -51,23 +48,24 @@ body {
     font-weight: bold;
     margin: 0 20px;
     color: black;
-    transition: transform 0.3s ease;
-}
-
-#kiosk-title:hover {
-    transform: scale(1.02);
 }
 
 #kiosk-title .nerdy-font {
     font-family: 'Courier New', Courier, monospace;
-    color: #ffcc00;
-    transition: color 0.3s ease;
+    color: #00FF9D;
+    font-size:larger;
 }
 
 #kiosk-title .codeclub-font {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     color: #00aaff;
-    transition: color 0.3s ease;
+    font-size:larger;
+}
+
+#kiosk-title .robotica-font {
+    color: #FF6B6B;
+    font-family: 'Orbitron', sans-serif;
+    font-size:larger;
 }
 
 #kiosk-container {
