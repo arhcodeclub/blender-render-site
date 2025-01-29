@@ -100,8 +100,10 @@ body {
 }
 
 #image-display, #video-display {
-    max-width: 100%;
-    max-height: 100%;
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    width:100%;
+    height:auto;
     display: none;
     opacity: 0;
     transform: scale(0.95);
@@ -161,4 +163,42 @@ body {
 #start-kiosk:active {
     transform: translateY(0);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+    #kiosk-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #kiosk-title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #school-logo {
+        margin-bottom: 10px;
+    }
+
+    #media-container {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    #media-container img,
+    #media-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+    }
+
+    #kiosk-container {
+        margin-top: 0;
+        padding: 0;
+    }
 }
